@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-g -Wall
 LDFLAGS=
-LIB_OBJS=error.o wrapsock.o wrapstdio.o wrapunix.o
+LIB_OBJS=error.o wrapsock.o wrapstdio.o wrapunix.o wrappthread.o
 LIBS=./libunp.a -lpthread
 PROGS=daytimetcpcli daytimetcpsrv
 OBJS= $(LIB_OBJS) $(PROGS:=.o)
